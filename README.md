@@ -19,7 +19,7 @@ Chinese:
 3. 我舍弃了position encoding和skip encoder，这对合成效果的影响很小
 
 ## Sample & Pretrained model
-[sample here](https://github.com/xcmyz/DurIAN/tree/master/sample), I use waveglow as vocoder, [pretrained model here](), batchsize is 32, step is 180k.
+[sample here](https://github.com/xcmyz/DurIAN/tree/master/sample), I use waveglow as vocoder, [pretrained model here](https://drive.google.com/file/d/1-uL3lVW88o982UwYgwQVN4GF5veJezGb/view?usp=sharing), batchsize is 32, step is 300k.
 
 ## Usage
 training:
@@ -35,8 +35,8 @@ testing:
 2. `CUDA_VISIBLE_DEVICES=0 python3 test.py --step [step-of-checkpoint]`
 
 testing using pretrained model:
-1. put [pretrained model]() in `model_new`
-2. `CUDA_VISIBLE_DEVICES=0 python3 test.py --step 180000`
+1. put [pretrained model](https://drive.google.com/file/d/1-uL3lVW88o982UwYgwQVN4GF5veJezGb/view?usp=sharing) in `model_new`
+2. `CUDA_VISIBLE_DEVICES=0 python3 test.py --step 300000`
 
 ## Notes
 尽管DurIAN的生成速度比不上FastSpeech，但是DurIAN生成的样本音质好于FastSpeech，并且计算量也小于FastSpeech，在实际部署中，DurIAN的生成速度已经完全满足RTF要求。
