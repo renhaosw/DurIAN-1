@@ -44,10 +44,16 @@ def get_data():
     test1 = "I am very happy to see you again!"
     test2 = "Durian model is a very good speech synthesis!"
     test3 = "When I was twenty, I fell in love with a girl."
+    test4 = "I remove attention module in decoder and use average pooling to implement predicting r frames at once"
+    test5 = "You can not improve your past, but you can improve your future. Once time is wasted, life is wasted."
+    test6 = "Death comes to all, but great achievements raise a monument which shall endure until the sun grows old."
     data_list = list()
     data_list.append(text.text_to_sequence(test1, hp.text_cleaners))
     data_list.append(text.text_to_sequence(test2, hp.text_cleaners))
     data_list.append(text.text_to_sequence(test3, hp.text_cleaners))
+    data_list.append(text.text_to_sequence(test4, hp.text_cleaners))
+    data_list.append(text.text_to_sequence(test5, hp.text_cleaners))
+    data_list.append(text.text_to_sequence(test6, hp.text_cleaners))
     return data_list
 
 
